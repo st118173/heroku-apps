@@ -94,7 +94,7 @@ Rails.application.configure do
 
   config.after_initialize do
    
-    ActiveMerchant::Billing::Base.mode = :production #when you will use a real Pro Account
+    ActiveMerchant::Billing::Base.mode = :test #when you will use a real Pro Account
     ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
        
         login: "ait_api1.test.com",
