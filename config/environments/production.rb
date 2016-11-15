@@ -93,15 +93,15 @@ Rails.application.configure do
 
 
   config.after_initialize do
-    proxy_uri = URI.parse(ENV['PAYMENT_GATEWAY_PROXY'])
+   
     ActiveMerchant::Billing::Base.mode = :production #when you will use a real Pro Account
     ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
-        Proxy: "http://192.41.170.23:3128",
+       
         login: "ait_api1.test.com",
         password: "Z5C5YB2UB8ATAKZL",
         signature: "AFcWxV21C7fd0v3bYYYRCpSSRl31AXGg5wT9sljSF3PF6GwadwS.0GGP"
     )
-    GATEWAY.proxy_address = "http://192.41.170.23:3128"
+   
 
   end
 
