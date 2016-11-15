@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Post:</strong>
+  <% if @post != nil %>
+  <%= @post.post %>
+
+</p>
+
+<%#= link_to 'Edit', edit_post_path(@post) %> |
+
+      <%= render 'posts/index' %>
+  <%end%>
+  <%= link_to 'Back', posts_path %>

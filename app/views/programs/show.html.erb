@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Event name:</strong>
+  <%= @program.Event_Name %>
+</p>
+<p>
+  <strong>Event Details:</strong>
+  <%= @program.event_details %>
+</p>
+<p>
+  <%= commontator_thread(@program) %>
+</p>
+
+<%= button_to( "Donate", new_reg_path, :method => :get, :class => 'btn btn-primary' )%>
+<%= link_to 'Edit', edit_program_path(@program) %> |
+<%= link_to 'Back', programs_path %>

@@ -1,0 +1,164 @@
+
+
+    <ul><ul><ul><ul>
+<div class="row">
+<div id="stream" style="width: 28cm;height: 22cm;align-content: center"; align="center">
+<%= simple_form_for(reg) do |f| %>
+      <ul>
+      <div id="stream-list" class="follow-list">
+    <% if reg.errors.any?  %>
+        <div id="error_explanation">
+          <h2><%= pluralize(reg.errors.count, "error") %> prohibited this registration from being saved:</h2>
+
+          <ul>
+            <% reg.errors.full_messages.each do |message| %>
+                <li><span class="list-group-item"><%= message %></span></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <span class="list-group-item" >
+    <div class="field">
+      <%= f.label :member_role %>
+      <%= f.select :member_role, [["Volunteer", "Volunteer"], ["Member", "Member"]] %>
+    </div></span>
+        <span class="list-group-item" style="width: 7cm">
+    <div class="field" >
+      <%= f.label :full_name %>
+      <%= f.text_field :full_name %>
+    </div></span>
+
+<span class="list-group-item" style="width: 8cm">
+    <div class="field">
+      <%= f.label :Email %>
+      <%= f.email_field :email %>
+    </div></span>
+<span class="list-group-item" style="width: 7cm">
+    <div class="field">
+      <%= f.label :Telephone %>
+      <%= f.text_field :telephone %>
+    </div></span>
+
+        <span class="list-group-item" style="width: 25.15cm">
+    <ul>
+    <div class="field">
+
+      <%= f.label 'Address/company' %>
+      <%= f.text_area :company %>
+    </div> </ul></span>
+        <span class="list-group-item" style="width: 12.565cm">
+
+           <%= f.label :card_payment  %><%= radio_button_tag('payment','card','checked = false',class: "payment_method") %>
+          <%= image_tag('credit-card.png', :style => "z-index:19; position: relative; ", size: '280x190') %>
+
+                 <div class="field">
+
+          </div></span>
+
+        <span class="list-group-item" style="width: 12.565cm;height: 6.43cm">
+<div class="field">
+  <%= f.label :paypal %><%= radio_button_tag('payment','paypal','checked = true',class: "payment_method")%>
+  <%= image_tag('ppcom.svg', :style => "z-index:19; position: relative; ", size: '230x150') %>
+           </div>
+       </span>
+        <ul>
+    <span style="width: 28cm;height: 22cm;align-content: center"; align="center">
+    <%= field_set_tag 'Enter Card details', id: 'cardinfo' do %>
+
+
+
+        <%= f.fields_for :card do |c| %>
+
+
+
+            <div class="field">
+              <span class="list-group-item" style="width: 25.15cm">
+              <%= c.label :card_type %>
+              <%= c.select :card_type, [["Visa", "visa"], ["MasterCard", "master"], ["Discover", "discover"], ["American Express", "american_express"]] %>
+
+                      </span>
+                  <span class="list-group-item">
+
+              <%= c.label :Name_on_card %>
+              <%= c.text_field :first_name %>
+            </span></div>
+
+
+
+
+                     <span class="list-group-item" style="width: 20cm">
+            <div class="field">
+          <%= c.label :card_number %>
+
+              <%= c.text_field :card_number, :id=> 'fullName' %>
+
+
+                <!--<div class="field">-->
+              <!--<%#= text_field :fName, :id=> 'fName' ,:onkeyup => 'generateFullName()', maxlength: 4, size: 4 %>-->
+                 <!--<%#= text_field :sName, :id=> 'sName' ,:onkeyup => 'generateFullName()', maxlength: 4, size: 4 %>-->
+                <!--<%#= text_field :tName, :id=> 'tName' ,:onkeyup => 'generateFullName()', maxlength: 4, size: 4 %>-->
+                <%#= text_field :foName, :id=> 'foName' ,:onkeyup => 'generateFullName()', maxlength: 4, size: 4 %></div>
+
+
+                <!--</div>-->
+</span>
+                     <span class="list-group-item">
+            <div class="field">
+              <%= c.label :card_verification, "Card Verification Value (CVV)" %>
+              <%= c.text_field :card_verification, maxlength: 4, size: 4 %>
+            </div>
+                       </span>
+                     <span class="list-group-item">
+            <div class="field">
+              <%= c.label :card_expires_on %>
+              <%= c.date_select :card_expires_on, discard_day: true, start_year: Date.today.year, end_year: (Date.today.year+10), add_month_numbers: true %>
+            </div></span>
+
+              </span> </ul></div> </ul>
+        <% end %>
+
+              <% end %>
+
+
+        <div>
+               <div id ="stream-footer" style="width: 28cm;align-content: center"; align="center">
+
+                   <%= f.submit "Donate", class: "btn", style: "color: white;background: gray;", params: {check: :"paypal" }, data: {disable_with: "Submitting..."}%>
+
+
+  <% end %>
+  </div>
+  </div>
+  </div></div>
+
+  <script>
+  $(document).ready(function(){
+
+    $("#cardinfo").hide();
+
+    $("input:radio[name='payment']").change(function(){
+
+      if(this.value == 'card' && this.checked){
+        <% @check_pay = "card" %>
+        $("#cardinfo").show();
+      }else{
+        <% @check_pay = "paypal" %>
+        $("#cardinfo").hide();
+      }
+
+    });
+
+  });
+</script>
+      <script type="text/javascript">
+        function generateFullName()
+        {
+          document.getElementById('fullName').innerText =
+              document.getElementById('fName').value + ' ' +
+              document.getElementById('sName').value + ' ' +
+              document.getElementById('tName').value + ' ' +
+              document.getElementById('foName').value;
+        }
+      </script>
+
+    </ul></ul></ul></ul>
