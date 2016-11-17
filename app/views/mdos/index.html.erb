@@ -4,18 +4,18 @@
 
 <table>
   <thead>
-    <tr>
-      <th>Amount</th>
-      <th>Full name</th>
-      <th>Company</th>
-      <th>Email</th>
-      <th>Telephone</th>
-      <th colspan="3"></th>
-    </tr>
+  <tr>
+    <th>Amount</th>
+    <th>Full name</th>
+    <th>Company</th>
+    <th>Email</th>
+    <th>Telephone</th>
+    <th colspan="3"></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @mdos.each do |mdo| %>
+  <% @mdos.each do |mdo| %>
       <tr>
         <td><%= mdo.amount %></td>
         <td><%= mdo.full_name %></td>
@@ -26,7 +26,7 @@
         <td><%= link_to 'Edit', edit_mdo_path(mdo) %></td>
         <td><%= link_to 'Destroy', mdo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
 
