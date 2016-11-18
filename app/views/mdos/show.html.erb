@@ -99,4 +99,10 @@
     </script></td>
 
 </table></ul></ul></ul>
-<%= button_to "Proceed", programs_path,method: :get  %>
+<% if @mdo.card.card_transaction.params["Ack"] == 'Success' %>
+    <%= button_to "Proceed", programs_path,method: :get,class: "btn btn-large btn-success"   %>
+<% else %>
+    <%= button_to "Back to payment", new_reg_path,method: :get,class: "btn btn-danger"   %>
+
+
+<% end %>
