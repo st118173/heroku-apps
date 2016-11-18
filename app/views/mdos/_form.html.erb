@@ -22,8 +22,8 @@
   Rendered /home/arunkumar/.rbenv/versions/2.2.4/</p>
 -->
 
-<ul><ul><ul><ul>
-  <div class="row">
+
+  <div class="row" align="center">
     <div id="stream" style="width: 27.215cm;height: 15cm;align-content: center"; align="center">
       <%= form_for mdo , :html => { id: "payment-form", method: "POST", action: "javascript:void(0);" } do |f| %>
           <ul>
@@ -163,10 +163,11 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="row">
-                                <div class="col-xs-12">
-                                  <div class="form-group">
-                                    <label for="couponCode">CARD TYPE</label>
+
+                              <div class="row" >
+                                <div class="col-xs-12 ">
+                                  <div class="form-group ">
+                                    <label for="couponCode" >CARD TYPE</label>
                                     <%= c.select :card_type, [["Visa", "visa"], ["MasterCard", "master"], ["Discover", "discover"], ["American Express", "american_express"]]%>
                                   </div>
                                 </div>
@@ -232,10 +233,10 @@
                               </div>
                           <% end %>
                           </ul></ul></ul></ul></ul></ul></ul></ul></div>
-          </ul></div></div></ul></ul>
+          </ul></div></div>
           <%#= button_tag "Reset",class: "subscribe btn btn-success btn-lg btn-block" , style: "color: white;background: gray;", type: :reset %>
 
-          </ul> </ul><% end %>
+          <% end %>
       </div>
       </ul>
       <script>
