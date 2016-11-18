@@ -4,14 +4,7 @@ class ApplicationController < ActionController::Base
 
   #before_action :authenticate_user!, :except => [:index, :show]
   protect_from_forgery with: :exception
-  protected
 
-  def configure_permitted_parameters
-    # devise_parameter_sanitizer.for(:sign_up) { |u| u.permit( :email, :password) }
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:email, :password])
-    devise_parameter_sanitizer.permit(:account_update, keys: [:email, :password, :current_password, :date_of_birth])
-    #devise_parameter_sanitizer.for(:account_update) { |u| u.permit( :email, :password, :current_password, :date_of_birth) }
-  end
   def authenticate_user!
     if user_signed_in?
       super
@@ -24,7 +17,7 @@ class ApplicationController < ActionController::Base
   def after_sign_in_path_for(resource)
     case resource
       when User then
-        if @mdo.card.card_transaction.params["Ack"] == 'Success'
+        if request.referrer.to_s.include? "sign_up"
           new_reg_path
 
         else
