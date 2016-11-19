@@ -16,7 +16,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => 'https://web14.cs.ait.asia/maa' }
+  config.action_mailer.default_url_options = { :host => 'https://maaaapkichaaya.herokuapp.com/' }
   config.action_mailer.smtp_settings = {
       :address => "smtp.gmail.com",
       :port => 587,
@@ -61,8 +61,7 @@ Rails.application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
    config.force_ssl = true
 
-  config.assets.raise_runtime_errors = true
-  config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
   config.log_level = :debug
