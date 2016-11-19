@@ -227,8 +227,14 @@ ActiveRecord::Schema.define(version: 20161109034516) do
     t.integer  "role_id"
     t.string   "username"
     t.integer  "card_id"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
+    t.integer  "roles_mask"
     t.datetime "date_of_birth"
     t.index ["card_id"], name: "index_users_on_card_id", using: :btree
+    t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
     t.index ["role_id"], name: "index_users_on_role_id", using: :btree

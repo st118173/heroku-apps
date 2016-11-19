@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   has_many :messages, foreign_key: :sender_id
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :timeoutable
+         :recoverable, :rememberable, :trackable, :validatable, :timeoutable, :confirmable
   has_one :reg
   belongs_to :role
   has_one :userpersnaldet
@@ -11,6 +11,8 @@ class User < ApplicationRecord
   before_save :assign_isactive
   before_save :assign_pid
   acts_as_commontator
+
+
 
   #default role is volunteer
   #def assign_role
@@ -66,5 +68,6 @@ class User < ApplicationRecord
   # def active_for_authentication?
   #   super && approved?
   # end
+
 
 end
