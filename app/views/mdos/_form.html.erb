@@ -1,31 +1,6 @@
-<style>
-  #ull{
-    width: 2cm;
-  }
-</style>
-<script>
-  function mouseDown() {
-    document.getElementById("myP").style.color = "red";
-  }
-
-  function mouseUp() {
-    document.getElementById("myP").style.color = "green";
-  }
-</script>
-
-
-<!--
-<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()"> You can click here mes] (5.1ms)
-  Rendered /home/arunkumar/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
-  Rendering /home/arunkumar/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /home/arunkumar/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
-  Rendered /home/arunkumar/.rbenv/versions/2.2.4/</p>
--->
-
-
-  <div class="row" align="center">
+ <div class="row" align="center">
     <div id="stream" style="width: 27.215cm;height: 15cm;align-content: center"; align="center">
-      <%= form_for mdo , :html => { id: "payment-form", method: "POST", action: "javascript:void(0);" } do |f| %>
+      <%= form_for mdo , :html => { id: "payment-form", method: "POST", action: "javascript:void(0);" },remote:true do |f| %>
           <ul>
             <div id="stream-list" class="follow-list" style="height: 14cm">
               <% if mdo.errors.any?  %>

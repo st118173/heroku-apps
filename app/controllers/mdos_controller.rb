@@ -6,6 +6,7 @@ class MdosController < ApplicationController
     #@mdo = Mdo.all
     #@mdos = Mdo.all
     @mdos = Mdo.all
+    @mdo = Mdo.new
   end
 
   # GET /Donations/1
