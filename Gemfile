@@ -15,6 +15,7 @@ gem 'font-awesome-rails'
 # Use Puma as the app server
 #gem 'puma', '~> 3.0'
 gem 'commontator'
+gem 'rails_admin'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
