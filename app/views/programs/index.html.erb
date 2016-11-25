@@ -21,7 +21,7 @@
         <td><%= link_to 'Show', program,:id=> 'program.id' %></td>
         <td><%= button_to( "Donate", new_mdo_path, :method => :get )%></td>
         <% if user_signed_in? %> <td><%= link_to 'Edit', edit_program_path(program) %></td><% end %>
-        <% if user_signed_in? && current_user.email == 'admin@ait.asia' %> <td><%= link_to 'Delete Event', program, method: :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
+        <% if user_signed_in? && current_user.email == 'st118173@ait.asia' %> <td><%= link_to 'Delete Event', program, method: :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
       </tr>
   <% end %>
   </tbody>
@@ -32,5 +32,5 @@
 
 <% if user_signed_in?  %><%= button_to( "Add New Event", new_program_path, :method => :get )%><% end %>
 
-<% if user_signed_in? && current_user.email == 'admin@ait.asia' %><%= button_to( "Users Profile", usersinfo_userlist_path, :method => :get )%><%end%>
-<% if user_signed_in? && current_user.email != 'admin@ait.asia' %><%= button_to( "Users list", usersinfo_userlist_path, :method => :get )%><%end%>
+<% if user_signed_in? && current_user.email == 'st118173@ait.asia' %><%= button_to( "Users Profile", usersinfo_userlist_path, :method => :get )%><%end%>
+<% if user_signed_in? && current_user.email != 'st118173@ait.asia' %><%= button_to( "Users list", usersinfo_userlist_path, :method => :get )%><%end%>

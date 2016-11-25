@@ -9,10 +9,10 @@
 @member = Role.create(name: "Member")
 @volunteer = Role.create(name: "Volunteer")
 # Admin
-User.create(email: "admin@ait.asia", password: "secret123",
+User.create(email: "st118173@ait.asia", password: "secret123",
             password_confirmation: "secret123", role_id: @admin.id)
 # Member
 User.create(email: "member@ait.asia", password: "secret123",
             password_confirmation: "secret123", role_id: @member.id)
-User.create(email: "voulenteer@ait.asia", password: "secret123",
+User.create(email: "volunteer@ait.asia", password: "secret123",
             password_confirmation: "secret123", role_id: @volunteer.id)

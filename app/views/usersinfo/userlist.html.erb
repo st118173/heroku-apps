@@ -5,7 +5,7 @@
     <th >S:No</th>
     <th >Email</th>
     <th >Role name</th>
-    <% if user_signed_in? && current_user.email == 'admin@ait.asia' %><th >Created_at</th>
+    <% if user_signed_in? && current_user.email == 'st118173@ait.asia' %><th >Created_at</th>
         <th >updated_at</th>
         <th >Status</th>
         <th >Release / Suspend</th>
@@ -24,12 +24,12 @@
               <td> <%= i  %>  </td>
           <td ><%= h userlist.email %></td>
               <td ><%= h rolename(userlist.role_id) %></td>
-          <% if user_signed_in? && current_user.email == 'admin@ait.asia' %><td ><%= h userlist.created_at %></td>
+          <% if user_signed_in? && current_user.email == 'st118173@ait.asia' %><td ><%= h userlist.created_at %></td>
               <td ><%= h userlist.updated_at %></td>
 
 
               <td ><% if userlist.is_active == 1  %><%= h "Not banned" %> <% else %> <%= h "banned" %> <%end %></td>
-              <% if userlist.email != 'admin@ait.asia'  %>
+              <% if userlist.email != 'st118173@ait.asia'  %>
 
                   <td>
                     <%= button_to check_status(userlist.id),
@@ -80,7 +80,7 @@
 </div>
 <h5>Number of Admins are :: <%= @us1  %></h5>
 <h5>Number of Users are :: <%= @us2 %></h5>
-<h5>Number of Voulenteers are :: <%= @us3 %></h5>
+<h5>Number of Volunteers are :: <%= @us3 %></h5>
 
 
 
