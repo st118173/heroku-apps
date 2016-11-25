@@ -3,8 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   has_many :messages, foreign_key: :sender_id
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable, :timeoutable
-  #, :confirmable
+         :recoverable, :rememberable, :trackable, :validatable, :timeoutable, :confirmable
   has_one :reg
   belongs_to :role
   has_one :userpersnaldet
