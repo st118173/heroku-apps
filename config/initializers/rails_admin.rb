@@ -1,11 +1,11 @@
 RailsAdmin.config do |config|
 
   ### Popular gems integration
-RailsAdmin.config do |config|
-  config.authorize_with do
-    redirect_to main_app.root_path unless user_signed_in? && current_user.role_id == 1
+  RailsAdmin.config do |config|
+    config.authorize_with do
+      redirect_to main_app.root_path unless user_signed_in? && current_user.role_id == 1
+    end
   end
-end
   ## == Devise ==
   # config.authenticate_with do
   #   warden.authenticate! scope: :user

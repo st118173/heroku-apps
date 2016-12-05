@@ -1,6 +1,13 @@
 class ProgramsController < ApplicationController
   before_action :set_program, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  before_filter :check_role ,except: :index
+  def check_role
+    if user_signed_in? && current_user.role_id ==nil
+      redirect_to new_reg_path
 
+    end
+  end
   # GET /programs
   # GET /programs.json
   def index
@@ -27,10 +34,12 @@ class ProgramsController < ApplicationController
   # POST /programs
   # POST /programs.json
   def create
-    @program = Program.new(program_params)
+    @user= current_user
+    @program = @user.programs.new(program_params)
 
     respond_to do |format|
       if @program.save
+        ProgramMailer.program_created(current_user,@program.Event_Name).deliver
         format.html { redirect_to @program, notice: 'Program was successfully created.' }
         format.json { render :show, status: :created, location: @program }
       else
@@ -72,7 +81,7 @@ class ProgramsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def program_params
-    params.require(:program).permit(:Event_Name,:event_details)
+    params.require(:program).permit(:Event_Name,:event_details,:photo)
 
   end
   protected

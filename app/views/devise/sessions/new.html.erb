@@ -1,57 +1,6 @@
+<body background="pp1.png">
 
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-<div class="container">
-
-  <div class="row" style="margin-top:20px">
-    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-      <form role="form">
-        <fieldset>
-          <h2>Sign In</h2>
-          <hr class="colorgraph">
-          <div class="form-group">
-            <%= f.email_field :email,:id =>"email", autofocus: true,:class=>"form-control input-lg", :placeholder=>"Email Address" %>
-          </div>
-          <div class="form-group">
-            <%= f.password_field :password, :id=>"password",:class=>"form-control input-lg" ,:placeholder=>"Password" %>
-          </div>
-
-          <div class="field">
-            <%= captcha_tag  %>
-            <%= f.label :Enter_above_Captcha%>
-            <%= text_field_tag :captcha  %>
-          </div>
-
-          <span class="button-checkbox">
-             <% if devise_mapping.rememberable? -%>
-
-     <button type="button" class="btn" data-color="info">Remember Me</button>
-                    <input type="checkbox" name="remember_me" id="remember_me" checked="checked" class="hidden">
-                <div align="right">
-               <%= render "devise/shared/links" %>
-              </div>
-
-            <% end -%>
-
-				</span>
-
-          <hr class="colorgraph">
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <%= f.submit "Log in" ,:class=>"btn btn-lg btn-success btn-block", :value=>"Sign In"%>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <%= link_to "Sign up", new_user_registration_path,:class=>"btn btn-lg btn-primary btn-block" %>
-
-            </div>
-          </div>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-
-</div>
-<% end %>
 <ul>
   <li>Admin Email :admin@ait.asia</li>
   <li>Admin Password : secret123</li>
@@ -120,3 +69,90 @@ init();
 });
 });
 </script>
+<script>
+  $(document).ready(function(){
+
+    $('html, body').animate({
+
+      scrollTop: $("c").offset().top
+
+    },1000);
+
+  });
+</script>
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+  <div class="modal-dialog" role="document" align="center">
+    <div class="modal-content" align="center" style="height: 17cm">
+      <div class="modal-header" align="center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" align="center"><span aria-hidden="true" align="center">&times;</span></button>
+        <%= image_tag 'pp1.png', style: 'width: 2cm; height: 2cm' %>
+        <h4 class="modal-title" id="myModalLabel">Maa Aapki Chaaya</h4>
+      </div>
+      <div class="modal-body" align="center">
+        <h4 class="modal-title" id="myModalLabel">Login</h4>
+        <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <div class="" id="login">
+
+              <div class="row" style="margin-top:20px;float: left;width: 17cm">
+                <div class="col-xs-1 col-sm-2 col-md-3 col-sm-offset-1 col-md-offset-3222222">
+                  <form role="form" style="float: left">
+                    <fieldset style=" float: left;width: 13cm" >
+
+                      <hr class="colorgraph">
+                      <div class="form-group">
+                        <%= f.email_field :email,:id =>"email", autofocus: true,:class=>"form-control input-lg", :placeholder=>"Email Address" %>
+                      </div>
+                      <div class="form-group">
+                        <%= f.password_field :password, :id=>"password",:class=>"form-control input-lg" ,:placeholder=>"Password" %>
+                      </div>
+
+                      <div class="field">
+                        <%= captcha_tag  %>
+                        <%= f.label :Enter_above_Captcha%>
+                        <%= text_field_tag :captcha  %>
+                      </div>
+
+                      <span class="button-checkbox">
+             <% if devise_mapping.rememberable? -%>
+
+     <button type="button" class="btn" data-color="info">Remember Me</button>
+                    <input type="checkbox" name="remember_me" id="remember_me" checked="checked" class="hidden">
+                <div align="right">
+               <%= render "devise/shared/links" %>
+              </div>
+
+            <% end -%>
+
+
+				</span>
+                      <hr class="colorgraph">
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                        <%= f.submit "Log in" ,:class=>"btn btn-lg btn-success btn-block", :value=>"Sign In"%>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6">
+                        <%= link_to "Sign up", new_user_registration_path,:class=>"btn btn-lg btn-primary btn-block" %>
+
+        <% end %>
+
+        </div>
+
+                    </fieldset>
+                  </form>
+                      </div>
+
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</body>

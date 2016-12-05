@@ -1,6 +1,13 @@
 class UserpersnaldetsController < ApplicationController
   before_action :set_userpersnaldet, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+  before_filter :check_role ,except: :index
+  def check_role
+    if user_signed_in? && current_user.role_id ==nil
+      redirect_to new_reg_path
+
+    end
+  end
   # GET /userpersnaldets
   # GET /userpersnaldets.json
   def index
@@ -15,6 +22,7 @@ class UserpersnaldetsController < ApplicationController
   # GET /userpersnaldets/1
   # GET /userpersnaldets/1.json
   def show
+    redirect_to programs_path
   end
 
   # GET /userpersnaldets/new

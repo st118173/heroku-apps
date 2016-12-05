@@ -8,9 +8,16 @@
   <strong>Event Details:</strong>
   <%= @program.event_details %>
 </p>
-<p>
-  <%= commontator_thread(@program) %>
-</p>
+<%= image_tag @program.photo.url(:medium) %>
+<h3>Comments</h3>
+
+<%= render @program.comts %>
+
+
+
+
+
+<p><%= render 'comts/form' %></p>
 
 <%= button_to( "Donate", new_reg_path, :method => :get, :class => 'btn btn-primary' )%>
 <%= link_to 'Edit', edit_program_path(@program) %> |

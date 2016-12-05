@@ -38,18 +38,18 @@
 </script>
 
 
-<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()"> You can click here mes] (5.1ms)
-  Rendered /home/arunkumar/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
-  Rendering /home/arunkumar/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /home/arunkumar/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
-  Rendered /home/arunkumar/.rbenv/versions/2.2.4/</p>
+<!--<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()"> You can click here mes] (5.1ms)-->
+  <!--Rendered /home/arunkumar/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)-->
+  <!--Rendering /home/arunkumar/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb-->
+  <!--Rendered /home/arunkumar/.rbenv/versions/2.2.4/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)-->
+  <!--Rendered /home/arunkumar/.rbenv/versions/2.2.4/</p>-->
 
-<ul><ul><ul><ul>
+<ul><ul><ul><ul><ul><ul><ul>
   <div class="row">
     <div id="stream" style="width: 27.215cm;height: 15cm;align-content: center"; align="center">
       <%= form_for reg , :html => { id: "payment-form", method: "POST", action: "javascript:void(0);" } do |f| %>
           <ul>
-            <div id="stream-list" class="follow-list" style="height: 14cm">
+            <div id="stream-list" class="follow-list" style="height: 13.7cm">
               <% if reg.errors.any?  %>
                   <div id="error_explanation">
                     <h2><%= pluralize(reg.errors.count, "error") %> prohibited this Donation from being saved:</h2>
@@ -61,7 +61,7 @@
                     </ul>
                   </div>
               <% end %>
-              <span class="list-group-item" style="width: 5.5cm" >
+              <span class="list-group-item" style="width: 5.5cm;height: 2cm" >
     <div class="field">
       <%= f.label :member_role %>
       <%= f.select :member_role, [["Volunteer", "Volunteer"], ["Member", "Member"]] %>
@@ -73,12 +73,12 @@
       <%= f.text_field :full_name %>
     </div></span>
 
-              <span class="list-group-item" style="width: 7cm">
+              <span class="list-group-item" style="width: 6.83cm">
     <div class="field">
       <%= f.label :Email %>
-      <%= f.email_field :email %>
+      <%= f.email_field :email,value: current_user.email %>
     </div></span>
-              <span class="list-group-item" style="width: 6.95cm">
+              <span class="list-group-item" style="width: 6.92cm">
     <div class="field">
       <%= f.label :Telephone %>
       <%= f.text_field :telephone %>
@@ -91,7 +91,7 @@
       <%= f.label 'Address/company' %>
       <%= f.text_area :company %>
     </div> </ul></span>
-              <span class="list-group-item" style="width: 12.5cm" >
+              <span class="list-group-item" style="width: 12.3cm" >
 
            <%= f.label :card_payment  %><%= radio_button_tag('payment','card','checked = false',class: "payment_method") %>
                 <%= image_tag('credit-card.png', :style => "z-index:19; position: relative; ", size: '280x190',id: 'img') %>
@@ -409,3 +409,4 @@
           }
         }, 250);
       </script>
+  </ul></ul> </ul>

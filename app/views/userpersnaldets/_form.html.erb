@@ -1,3 +1,5 @@
+
+
 <%= form_for(userpersnaldet) do |f| %>
   <% if userpersnaldet.errors.any? %>
     <div id="error_explanation">
@@ -22,8 +24,8 @@
   </div>
   <div class="field">
    <table><tr>
-   <td><%= f.label :Male %></td><td><%= f.radio_button :gender ,:true, {:checked => true} %></td>
-   <td><%= f.label :Female %></td><td><%= f.radio_button :gender ,:false%></td>
+   <td colspan="1cm" style="width: 1cm"><%= f.label :Male %></td><td colspan="1cm" style="width: 1cm"><%= f.radio_button :gender ,:true, {:checked => true} %></td>
+   <td style="width: 1.5cm"><%= f.label :Female %></td><td ><%= f.radio_button :gender ,:false%></td>
    </tr> </table>
   </div>
   <div class="field">
@@ -45,3 +47,4 @@
     <%= f.submit "Update"%>
   </div>
 <% end %>
+<%= button_to 'Skip', programs_path,method: :get %>

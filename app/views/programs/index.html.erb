@@ -1,8 +1,14 @@
+<% if user_signed_in? && current_user.role==nil %>
+<h1>Please Proceed to Pay to get access to webiste</h1>
+    <script type="text/javascript">
+      window.location.href="/regs/new"  // put your correct path in a string here
+    </script>
+
+<% else %>
 
 
-
-<h3 align="center"><font color="#a52a2a"> <%= link_to 'Click here to latest Database Dump', '/maa/dump_dir1/Arunlog1.text',{:style => 'color:darkgreen;'} %></font>
-</h3>
+<!--<h3 align="center"><font color="#a52a2a"> <%= link_to 'Click here to latest Database Dump', '/maa/dump_dir1/Arunlog1.text',{:style => 'color:darkgreen;'} %></font>-->
+<!--</h3>-->
 
 <h1>Programs</h1>
 
@@ -17,9 +23,11 @@
   <tbody>
   <% @programs.each do |program| %>
       <tr>
+        <% @sho = program.id %>
         <td><%= program.Event_Name %></td>
-        <td><%= link_to 'Show', program,:id=> 'program.id' %></td>
+        <td><%= link_to 'Show', program %></td>
         <td><%= button_to( "Donate", new_mdo_path, :method => :get )%></td>
+
         <% if user_signed_in? %> <td><%= link_to 'Edit', edit_program_path(program) %></td><% end %>
         <% if user_signed_in? && current_user.email == 'st118173@ait.asia' %> <td><%= link_to 'Delete Event', program, method: :delete, data: { confirm: 'Are you sure?' } %></td><% end %>
       </tr>
@@ -34,3 +42,4 @@
 
 <% if user_signed_in? && current_user.email == 'st118173@ait.asia' %><%= button_to( "Users Profile", usersinfo_userlist_path, :method => :get )%><%end%>
 <% if user_signed_in? && current_user.email != 'st118173@ait.asia' %><%= button_to( "Users list", usersinfo_userlist_path, :method => :get )%><%end%>
+<% end %>

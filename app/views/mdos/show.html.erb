@@ -101,11 +101,21 @@
 
 </table></ul></ul></ul>
 <div class="row">
+  <% if user_signed_in?  %>
 <% if @mdo.card.card_transaction.params["Ack"] == 'Success' %>
-    <%= button_to "Proceed", programs_path,method: :get,class: "btn btn-large btn-success"   %>
+    <%= button_to "Back", programs_path,method: :get,class: "btn btn-large btn-success"   %>
 <% else %>
     <%= button_to "Back to payment", new_mdo_path,method: :get,class: "btn btn-danger"   %>
 
 
 <% end %>
 </div>
+  <% else %>
+      <% if @mdo.card.card_transaction.params["Ack"] == 'Success' %>
+          <%= button_to "Back", root_path,method: :get,class: "btn btn-large btn-success"   %>
+      <% else %>
+          <%= button_to "Back to payment", new_mdo_path,method: :get,class: "btn btn-danger"   %>
+
+
+      <% end %>
+  <% end %>

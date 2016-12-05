@@ -51,12 +51,12 @@
       <%= f.text_field :full_name %>
     </div></span>
 
-              <span class="list-group-item" style="width: 7cm">
+              <span class="list-group-item" style="width: 7.848cm">
     <div class="field">
       <%= f.label :Email %>
-      <%= f.email_field :email %>
+      <%= f.email_field :email ,value: current_user.email%>
     </div></span>
-              <span class="list-group-item" style="width: 6.95cm">
+              <span class="list-group-item" style="width: 5.91cm">
     <div class="field">
       <%= f.label :Telephone %>
       <%= f.text_field :telephone %>
@@ -69,7 +69,7 @@
       <%= f.label 'Address/company' %>
       <%= f.text_area :company %>
     </div> </ul></span>
-              <span class="list-group-item" style="width: 12.5cm" >
+              <span class="list-group-item" style="width: 12.3cm" >
 
            <%= f.label :card_payment  %><%= radio_button_tag('payment','card','checked = false',class: "payment_method") %>
                 <%= image_tag('credit-card.png', :style => "z-index:19; position: relative; ", size: '280x190',id: 'img') %>

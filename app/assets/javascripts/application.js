@@ -12,10 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require dropzone
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require alertify
 //= require jquery-fileupload
 //= require jquery-fileupload/basic
+//= require_self
 //= require_tree .
 
 
@@ -26,4 +29,8 @@ $(document).ready(function(){
             $(this).delay(2500).slideUp();
         });
     });
+});
+
+$(function(){
+    alertify.parent(document.body);
 });

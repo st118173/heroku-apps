@@ -1,5 +1,12 @@
 class UsersinfoController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
+  before_filter :check_role ,except: :index
+  def check_role
+    if user_signed_in? && current_user.role_id ==nil
+      redirect_to new_reg_path
+
+    end
+  end
   @@ban = 0
   def User
     #@success = CardTransaction.all

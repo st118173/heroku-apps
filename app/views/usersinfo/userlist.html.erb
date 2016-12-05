@@ -37,7 +37,7 @@
                                       :controller => 'usersinfo',
                                       :action => :ban_or_unban,
                                       :u_id => userlist.id
-                                  },
+                                  },remote: true,
                                   :class=>"btn btn-primary"
                     %>
                   </td>
@@ -49,7 +49,7 @@
                                       :u_id => userlist.id,
                                       :value => "#{"UN" if userlist.id }PUBLISH"
 
-                                  },
+                                  },remote: true,
                                   :class=>"btn btn-info"
                     %>
                   </td>
@@ -60,7 +60,7 @@
                                           :action => :destroy,
                                           :u_id => userlist.id,
 
-                                      },
+                                      },remote: true,
                                       :class=>"btn btn-danger"
                         %>
                       </td>

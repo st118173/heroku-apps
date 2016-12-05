@@ -1,3 +1,8 @@
+<br><br>
+<h2 align="center" >&nbsp;&nbsp;&nbsp;&nbsp;Please make sure that you don't reload the page until you take print of the receipt if you want</h2>
+
+<h5 align="center">Note: <i style="color: red">we need <i style="color: forestgreen">green</i> color bar with success notification to verify</i></h5>
+
 <ul><ul><ul><table >
   <tr><td align="center"><ul><%= image_tag("print.png", :width=>130, :height=>130, :onclick=>"PrintDiv();", :class=>'btn') %></ul></td></tr>
   <td>
@@ -14,7 +19,7 @@
         <div class="left" style="padding-left:100px;">
 
 
-          <table align="center" style="border: solid;border-color: green;background-color: white">
+          <table align="center" style="border: solid;border-color: green;background-color: white;width: 18cm">
             <% if notice %>
                 <p id="notice" style="background-color: lightgreen;padding: 5px;">
                   <%= notice %>
@@ -93,19 +98,14 @@
                     <%= button_to "Proceed", programs_path,method: :get,class: "btn btn-large btn-success"   %>
                 <% else %>
                     <%= button_to "Back to payment", new_reg_path,method: :get,class: "btn btn-danger"   %>
-
-
                 <% end %>
               <% else %>
-                <%= button_to "Proceed", programs_path,method: :get,class: "btn btn-large btn-success"   %>
+                <%= button_to "Proceed", programs_path,method: :get,style:"background-color: black" %>
             <% end %>
 
           </table>
         </div>
-
-
-
-        </div>
+      </div>
 
     </section>
   </section>

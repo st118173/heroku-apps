@@ -1,7 +1,13 @@
 class MessagesController < ApplicationController
   before_action :authenticate_user!
 
+  before_filter :check_role ,except: :index
+  def check_role
+    if user_signed_in? && current_user.role_id ==nil
+      redirect_to new_reg_path
 
+    end
+  end
   def create
     @message = current_user.messages.build(message_params)
 

@@ -1,6 +1,12 @@
 class DonateEducationMaterialsController < ApplicationController
   before_action :set_donate_education_material, only: [:show, :edit, :update, :destroy]
+  before_filter :check_role ,except: :index
+  def check_role
+    if user_signed_in? && current_user.role_id ==nil
+      redirect_to new_reg_path
 
+    end
+  end
   # GET /donate_education_materials
   # GET /donate_education_materials.json
   def index

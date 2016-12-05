@@ -1,6 +1,13 @@
 class RegsController < ApplicationController
   before_action :set_reg, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+  #before_filter :check_role ,except: :index
+  def check_role
+    if user_signed_in? && current_user.role_id ==nil
+      redirect_to new_reg_path
+
+    end
+  end
   # GET /registrations
   def index
     @reg = Reg.all

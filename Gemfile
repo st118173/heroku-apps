@@ -10,12 +10,18 @@ gem 'devise'
 gem 'country_select'
 gem 'acts_as_votable'
 gem 'bourbon'
+gem 'alertify-rails'
+gem 'carrierwave'
 gem 'cancancan'
 gem 'font-awesome-rails'
+gem 'devise_lastseenable'
+
 # Use Puma as the app server
 #gem 'puma', '~> 3.0'
 gem 'commontator'
 gem 'rails_admin'
+gem 'devise_google_authenticator'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -40,12 +46,13 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'activemerchant'
+gem 'sprockets'
 gem 'faker'
 gem 'neat'
 gem 'refills'
 gem "normalize-rails"
 gem 'easy_captcha'
-gem 'haml'
+
 gem 'sdoc', group: :doc
 gem "binding_of_caller"
 group :development, :test do
@@ -85,7 +92,7 @@ group :test do
   gem 'shoulda-matchers'
 end
 gem "auto_html"
-gem 'haml-rails'
+
 #SSL configure
 # gem 'thin'
 # gem 'rack-ssl', :require => 'rack/ssl'

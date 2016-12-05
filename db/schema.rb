@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161109034516) do
+ActiveRecord::Schema.define(version: 20161205210937) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -83,6 +83,13 @@ ActiveRecord::Schema.define(version: 20161109034516) do
     t.index ["commontable_id", "commontable_type"], name: "index_commontator_threads_on_c_id_and_c_type", unique: true, using: :btree
   end
 
+  create_table "comts", force: :cascade do |t|
+    t.text     "content"
+    t.integer  "program_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "courses", force: :cascade do |t|
     t.string   "name",                                null: false
     t.string   "status",                              null: false
@@ -105,6 +112,15 @@ ActiveRecord::Schema.define(version: 20161109034516) do
     t.string   "text_donation"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+  end
+
+  create_table "emails", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone",      limit: 13
+    t.string   "message"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "images", force: :cascade do |t|
@@ -136,6 +152,12 @@ ActiveRecord::Schema.define(version: 20161109034516) do
     t.datetime "purchased_at"
   end
 
+  create_table "media", force: :cascade do |t|
+    t.string   "file_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "messages", force: :cascade do |t|
     t.text     "body"
     t.integer  "sender_id"
@@ -143,21 +165,17 @@ ActiveRecord::Schema.define(version: 20161109034516) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "posts", force: :cascade do |t|
-    t.string   "post"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "name"
-    t.string   "email"
-    t.integer  "program_id"
-    t.index ["program_id"], name: "index_posts_on_program_id", using: :btree
-  end
-
   create_table "programs", force: :cascade do |t|
     t.string   "Event_Name"
     t.string   "event_details"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.integer  "media_id"
+    t.integer  "user_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   create_table "queries", force: :cascade do |t|
@@ -240,25 +258,10 @@ ActiveRecord::Schema.define(version: 20161109034516) do
     t.index ["role_id"], name: "index_users_on_role_id", using: :btree
   end
 
-  create_table "votes", force: :cascade do |t|
-    t.string   "votable_type"
-    t.integer  "votable_id"
-    t.string   "voter_type"
-    t.integer  "voter_id"
-    t.boolean  "vote_flag"
-    t.string   "vote_scope"
-    t.integer  "vote_weight"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.index ["votable_id", "votable_type", "vote_scope"], name: "index_votes_on_votable_id_and_votable_type_and_vote_scope", using: :btree
-    t.index ["voter_id", "voter_type", "vote_scope"], name: "index_votes_on_voter_id_and_voter_type_and_vote_scope", using: :btree
-  end
-
   add_foreign_key "card_transactions", "cards"
   add_foreign_key "card_transactions", "users"
   add_foreign_key "cards", "mdos"
   add_foreign_key "cards", "regs"
-  add_foreign_key "posts", "programs"
   add_foreign_key "regs", "users"
   add_foreign_key "userpersnaldets", "users"
   add_foreign_key "users", "cards"

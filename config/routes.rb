@@ -1,19 +1,35 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  resources :emails
   get 'ps/ps4'
 
   get 'ps/ps5'
-  root 'programs#index'
+
+  authenticated :user do
+
+      root 'userpersnaldets#new'
+
+    end
+get 'home/home'
+  root 'home#home'
   resources :mdos
   resources :maa_addresses
   resources :regs
   resources :userpersnaldets
   captcha_route
 
-  mount Commontator::Engine => '/commontator'
+
   #root 'messages#index'
   resources :messages, only: [:create, :destroy, :index, :new]
-  resources :programs
+  resources :programs do
+    resources :comts
+
+  end
+
+  resources :media_contents, only: [:create]
+
+  delete 'delete_media', to: "media_contents#delete_media"
+  delete 'delete_all', to: 'media_contents#delete_all'
   devise_for :users, :controllers => { registrations: 'registrations' }
   get 'usersinfo/userlist'
  #root 'programs#index'

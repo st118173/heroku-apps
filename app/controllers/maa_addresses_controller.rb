@@ -1,6 +1,12 @@
 class MaaAddressesController < ApplicationController
   before_action :set_maa_address, only: [:show, :edit, :update, :destroy]
+  before_filter :check_role ,except: :index
+  def check_role
+    if user_signed_in? && current_user.role_id ==nil
+      redirect_to new_reg_path
 
+    end
+  end
   # GET /maa_addresses
   # GET /maa_addresses.json
   def index

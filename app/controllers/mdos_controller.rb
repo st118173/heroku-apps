@@ -1,7 +1,15 @@
 class MdosController < ApplicationController
-  before_action :set_mdo, only: [:show, :edit, :update, :destroy]
 
+  before_action :set_mdo, only: [:show, :edit, :update, :destroy]
+  before_filter :check_role ,except: :index
+  def check_role
+    if user_signed_in? && current_user.role_id ==nil
+      redirect_to new_reg_path
+
+    end
+  end
   # GET /Donations
+
   def index
     #@mdo = Mdo.all
     #@mdos = Mdo.all
