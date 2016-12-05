@@ -2,128 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd17c730-0a42-45e9-8455-34889a581939" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/UserRegpage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/UserRolePage.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/Workflow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/clean_blog/about-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/clean_blog/contact-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/clean_blog/home-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/clean_blog/post-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/clean_blog/post-sample-image.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/creative/header.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/creative/portfolio/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/creative/portfolio/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/creative/portfolio/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/creative/portfolio/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/creative/portfolio/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/creative/portfolio/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/donate.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/ev1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/ev2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/event.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/freelancer/portfolio/cabin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/freelancer/portfolio/cake.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/freelancer/portfolio/circus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/freelancer/portfolio/game.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/freelancer/portfolio/safe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/freelancer/portfolio/submarine.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/freelancer/profile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/grayscale/downloads-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/grayscale/intro-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/grayscale/map-marker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/clean_blogs_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/creatives_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/freelancers_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/grayscales_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/programs_controller.rb.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/ps5_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/ps_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/clean_blogs_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/posts_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/ps5_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/ps_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/clean_blogs/_footer.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/clean_blogs/_header.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/clean_blogs/_navigation.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/clean_blogs/_shim.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/clean_blogs/about.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/clean_blogs/contact.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/clean_blogs/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/clean_blogs/post.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/layouts/clean_blog.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/layouts/creative.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/layouts/freelancer.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/layouts/grayscale.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/_post.json.jbuilder" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/editpost.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/index.json.jbuilder" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/posts/show.json.jbuilder" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/ps/ps4.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/ps/ps5.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/ps/ps6.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/ps5/home.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/ps5/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/refills/_flashes.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20161103172845_install_commontator.commontator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/maa/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/clean_blog/about-bg-829612d735473ab57054770a5e2b816c97d3a36b1f47ede7598753c37feb4e20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/clean_blog/contact-bg-bf3d81f007ec588784738adf7a31f8e6926ee04593baa0e92fec24a9fdcd4ad5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/clean_blog/home-bg-a3be2c6632b137d6d86361d0acf29c64d65ddc8db04a686dd7c7435125c2b7a1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/clean_blog/post-bg-eab04d0440d76fe0e687f327ecaeac1e50104917490e0c999187fcbb787371eb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/clean_blog/post-sample-image-a3c36ec3463aaa4503459c5afd9a1f29460144d90e488d6fba56845c8eb2179e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/commontator/application-3797ea664e372f992c08895e1c7fea845316bcd90b96448efe57bcf33c21dbb1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/commontator/application-3797ea664e372f992c08895e1c7fea845316bcd90b96448efe57bcf33c21dbb1.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/commontator/application-4d7f1b25a1f37957412571833fbcb979d731e7d8e954785ff8055aa544d9ea90.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/commontator/application-4d7f1b25a1f37957412571833fbcb979d731e7d8e954785ff8055aa544d9ea90.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/commontator/application-5842e323a080ebc90b7491e6d900279658b17c69b5a61fb123a301e852c4f9e2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/commontator/application-5842e323a080ebc90b7491e6d900279658b17c69b5a61fb123a301e852c4f9e2.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/commontator/application-84b45df4759d7ba0a3d3661f66c31664d92022642b4cdb732bdbabd749098dcb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/commontator/application-84b45df4759d7ba0a3d3661f66c31664d92022642b4cdb732bdbabd749098dcb.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/commontator/application-e15fb9ebd0a48f870331e203abb00aafe6c1f8e26be9f26bb99304fe4859d027.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/commontator/application-e15fb9ebd0a48f870331e203abb00aafe6c1f8e26be9f26bb99304fe4859d027.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/commontator/mentions-b6b7fa51a04b3165a2aed9d389b12da72ca275552b2cbd0750bc83054547a9da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/commontator/mentions-b6b7fa51a04b3165a2aed9d389b12da72ca275552b2cbd0750bc83054547a9da.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/creative/header-012975bc0328ef43ba0535ef270cde7d9daa108dd20a707e487d278959bcb5f9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/creative/manifest-4a8a4cdb263443429654db8345433b13eff108be21514d60011b7a276b028931.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/creative/manifest-4a8a4cdb263443429654db8345433b13eff108be21514d60011b7a276b028931.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/creative/portfolio/1-90b6399bec2619f663bec20601c14d65e2a6517ea8c00d23f0109be2c66feb33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/creative/portfolio/2-f830fdfc221bfc636bdb03ba3a40b6579ae8e46579cceae498147be147b7d880.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/creative/portfolio/3-b587cdabd57a6825115f40551465bbd12b9812906a2e8a0c8fe5e30b3d468ecf.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/creative/portfolio/4-83a1cb38cfbcc72ebb605b9e2d2384a6ef1503095335827522a976366ed316f2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/creative/portfolio/5-2f8eb3527b4c09cca0cffd856266c8da6708565a318485352b0c76c0e62c2720.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/creative/portfolio/6-c16202c5945d6c5dc2631437188e35cd309b65fb4a2dc639b8d06023fba00a6b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/freelancer/manifest-3ef3a59e6804af246e064f4d285ab13028d41c5cf2156fe1b7f1bb81350d1418.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/freelancer/manifest-3ef3a59e6804af246e064f4d285ab13028d41c5cf2156fe1b7f1bb81350d1418.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/freelancer/portfolio/cabin-a9c98d4f3eb15b9fee113423d9210c03557d4e7c55d258fa14cef91aa0e2539b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/freelancer/portfolio/cake-cb93eb47ec12e5bac9e7f7eec458663837b328dcd0988771d2b3ef993a24b263.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/freelancer/portfolio/circus-24c01c49032a521bf8fec9519c1f76369f60e803cb024b806f3dea5b194d34c6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/freelancer/portfolio/game-db26a6e9308b5bb21f4b2ebf9959f0b5bfe2dbffcebf4c153409983d253a0e42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/freelancer/portfolio/safe-b982c53a51bb74c836e1b2bddf3f7e626ea2f76177eac0a80e6b6edf6dfa85c6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/freelancer/portfolio/submarine-17fbf11087030693518d8d88d610fe6cbe02ee3bf0a0be4ea914e47249b8772f.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/freelancer/profile-adb1ac7dd6ca3b6ed8fcbb01011c9d1891fd1ff755071b32211246554314d5ec.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/grayscale/downloads-bg-5e2c6ae8d5d054abf1371d8be49a0a0d682dc23cb2b73835025bb33eec42889e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/grayscale/intro-bg-936a71a5b239bc054904bf208ddaf672064b3a80af6164878f689180960b3c47.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/grayscale/manifest-c82e833eca4080b9cf56a0a507a46d1a23a3a052798d6ca424a07d53b8ffe74c.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/grayscale/manifest-c82e833eca4080b9cf56a0a507a46d1a23a3a052798d6ca424a07d53b8ffe74c.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/grayscale/map-marker-4ebbfac5c9d4713dddc90bea83ad769b219bab9d03fb7397aecd67b2543354b0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/images/avatars/000/000/001/medium/QR_CODE_DIRECT_CALL_636110731399286263.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/images/avatars/000/000/001/medium/credit-card.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/images/avatars/000/000/001/original/QR_CODE_DIRECT_CALL_636110731399286263.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/images/avatars/000/000/001/original/credit-card.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/images/avatars/000/000/001/thumb/QR_CODE_DIRECT_CALL_636110731399286263.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/images/avatars/000/000/001/thumb/credit-card.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/programs/photos/000/000/001/medium/let.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/programs/photos/000/000/001/original/let.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/system/programs/photos/000/000/001/thumb/let.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/maa.iml" afterPath="$PROJECT_DIR$/.idea/maa.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
     <ignored path="maa.iws" />
@@ -148,13 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-              <folding />
-            </state>
+      <file leaf-file-name="development.log" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/log/development.log">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -294,47 +169,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="maa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="log" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -649,12 +484,12 @@
       <workItem from="1480980652769" duration="14000" />
       <workItem from="1480980691311" duration="64000" />
       <workItem from="1480980757104" duration="26000" />
-      <workItem from="1480980869718" duration="889000" />
+      <workItem from="1480980869718" duration="1209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="547437000" />
+    <option name="totallyTimeSpent" value="547757000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -669,7 +504,7 @@
     <frame x="51" y="24" width="1315" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3711584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3711584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2967359" sideWeight="0.5027581" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -707,13 +542,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/mailer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1025,10 +853,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        <state relative-caret-position="94">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/development.log">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state />
       </provider>
     </entry>
   </component>
