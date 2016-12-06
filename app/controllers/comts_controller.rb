@@ -1,5 +1,5 @@
 class ComtsController < ApplicationController
-  #before_filter :check_role
+  before_filter :check_role
 
   def create
   @program = Program.find(params[:program_id])
