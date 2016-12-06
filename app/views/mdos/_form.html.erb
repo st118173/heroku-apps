@@ -22,6 +22,8 @@
   Rendered /home/arunkumar/.rbenv/versions/2.2.4/</p>
 -->
 
+<td><%= button_to 'Donate Education materials', courses_path,:method => :get,class: "btn btn-large btn-success" %></td>
+<td><%= button_to 'View Donations', mdos_path,:method => :get,class: "btn btn-large btn-success" %></td>
 
   <div class="row" align="center">
     <div id="stream" style="width: 27.215cm;height: 15cm;align-content: center"; align="center">
@@ -51,10 +53,10 @@
       <%= f.text_field :full_name %>
     </div></span>
 
-              <span class="list-group-item" style="width: 7.848cm">
+              <span class="list-group-item" style="width: 7.8cm">
     <div class="field">
       <%= f.label :Email %>
-      <%= f.email_field :email ,value: current_user.email%>
+      <%= f.email_field :email %>
     </div></span>
               <span class="list-group-item" style="width: 5.91cm">
     <div class="field">
